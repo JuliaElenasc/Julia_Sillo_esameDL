@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Identification of Gest</title>
+    <h1 class="title">Identification of Gest</h1>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+      .title {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="buttons">
+              <button id="snap" class="button is-primary">Snap Photo</button>
+              <button id="train" class="button is-info">Train Model</button>
+            </div>
+            <div class="video-container">
+              <video id="video" class="video" width="240" height="280" preload autoplay loop muted></video>
+              <canvas id="canvas" class="canvas" width="240" height="280"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
